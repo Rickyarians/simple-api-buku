@@ -6,7 +6,7 @@ const productsController = require('../controller/product');
 
 // /product/add-product
 /* GET users listing. */
-router.get('/product', productsController.getAddProduct);
+router.get('/', productsController.getviewProduct);
 router.post('/add-product', productsController.postAddProduct);
 router.get('/get-all', productsController.getProducts)
 

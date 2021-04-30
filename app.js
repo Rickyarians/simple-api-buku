@@ -12,6 +12,9 @@ var productsRouter = require('./routes/product');
 // call express()
 var app = express();
 
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 // config express
 app.use(logger('dev'));
 app.use(express.json());
